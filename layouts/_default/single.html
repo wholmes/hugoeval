@@ -1,0 +1,49 @@
+<!-- {{ define "main" }}
+ This is the single template
+{{end}}
+{{ define "footer" }}
+ This is the single footer
+{{end}} -->
+
+<h1>Single Template</h1>
+
+{{ $myVarName :="aString"}}
+
+<h1 style="color: {{.Params.color }};">{{ $myVarName }}</h1>
+
+{{ .Site.IsServer }}<br>
+{{ .Site.Language.Lang }}<br>
+{{ .Site.Pages }}<br>
+{{ .Site.RegularPages }}<br>
+{{ .Site.Sections }}<br>
+{{ .Site.Taxonomies }}<br>
+{{ .Site.Title }}<br>
+{{ .File}}<br>
+{{ .IsHome}}<br>
+{{ .IsNode}}<br>
+{{ .IsPage}}<br>
+{{ .CurrentSection}}<br>
+{{ .Sections}}
+
+
+<hr><br>
+
+{{ .Title }}<br>
+{{ .Date }}<br>
+{{ .URL }}<br>
+{{ .Draft }}<br>
+{{ .Params.CustomVar }}<br>
+{{ .Params.Author }}<br>
+{{ .Params.Language }}<br>
+{{ .Params.Tags }}<br>
+{{ .Params.Categories }}<br>
+{{ .Params.Moods }}<br>
+
+
+
+
+{{ .Content}}
+
+
+
+
